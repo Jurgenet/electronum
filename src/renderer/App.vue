@@ -5,11 +5,11 @@
 </template>
 
 <script>
-  export default {
-    name: 'electronum'
-  }
+export default {
+  name: 'electronum'
+}
 </script>
 
 <style>
-  /* CSS */
+/* CSS */
 </style>
