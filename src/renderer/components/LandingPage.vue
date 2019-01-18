@@ -3,8 +3,7 @@
     img(id="logo" src="~@/assets/logo.png" alt="electron-vue")
     main
       div(class="left-side")
-        span(class="title")
-          Welcome to your new project!
+        span(class="title") Welcome to your new project!
         system-information
 
       div(class="right-side")

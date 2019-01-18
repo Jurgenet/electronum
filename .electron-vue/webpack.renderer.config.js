@@ -31,7 +31,9 @@ let rendererConfig = {
     rules: [
       {
         test: /\.pug$/,
-        loader: 'pug-plain-loader'
+        use: {
+          loader: 'pug-plain-loader'
+        }
       },
       {
         test: /\.(js|vue)$/,
