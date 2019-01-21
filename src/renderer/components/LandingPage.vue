@@ -9,7 +9,8 @@
       div(class="right-side")
         div(class="doc")
           div(class="title") Getting Started
-          p | electron-vue comes packed with detailed documentation that covers everything from
+          p {{ messages }}
+          p electron-vue comes packed with detailed documentation that covers everything from
             | internal configurations, using the project structure, building your application,
             | and so much more.
           button(@click="open('https://simulatedgreg.gitbooks.io/electron-vue/content/')") Read the Docs 
@@ -22,11 +23,18 @@
 </template>
 
 <script>
+import { db } from '@/plugins/firebase'
+
 import SystemInformation from './LandingPage/SystemInformation'
 
 export default {
   name: 'landing-page',
   components: { SystemInformation },
+
+  firestore: () => ({
+    messages: db.collection('messages')
+  }),
+
   methods: {
     open(link) {
       this.$electron.shell.openExternal(link)
