@@ -6,6 +6,7 @@ import router from './router'
 import store from './store'
 
 import '@/plugins/firebase'
+import '@/plugins/highlights'
 
 if (!process.env.IS_WEB) Vue.use(require('vue-electron'))
 Vue.http = Vue.prototype.$http = axios
