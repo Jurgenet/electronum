@@ -70,8 +70,11 @@
   "dependencies": {
     "axios": "^0.18.0",
     "firebase": "^5.8.0",
+    "lodash": "^4.17.11",
+    "marked": "^0.6.0",
     "pug": "^2.0.3",
     "pug-plain-loader": "^1.0.0",
+    "pygmentize-bundled": "^2.3.0",
     "vue": "^2.5.16",
     "vue-electron": "^1.0.6",
     "vue-highlightjs": "^1.3.3",

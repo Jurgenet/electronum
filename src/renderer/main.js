@@ -5,11 +5,16 @@ import App from './App'
 import router from './router'
 import store from './store'
 
+/**
+ * Plugins
+ */
 import { db } from '@/plugins/firebase'
+import marked from '@/plugins/marked'
 import '@/plugins/highlights'
 
 if (!process.env.IS_WEB) Vue.use(require('vue-electron'))
 Vue.http = Vue.prototype.$http = axios
+Vue.marked = Vue.prototype.$marked = marked
 Vue.db = Vue.prototype.$db = db
 Vue.config.productionTip = false
 
